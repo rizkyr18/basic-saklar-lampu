@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- add tailwind from https://themesberg.com/knowledge-center/tailwind-css/html -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- Include via CDN dari flowbite.com -->
+    <title>SAKLAR LAMPU</title>
+</head>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen w-full bg-gray-800 gap-4">
+        <!-- gap 4px -->
+
+        <!-- Lampu 1 -->
+        <div class="flex flex-col gap-2 items-center">
+            <!-- gunakan items-center agar toggle berada ditengah -->
+            <!-- gunakan gap masing-masing 2px agar tiap div memiliki jarak-->
+            <img src="assets/images/off.jpg" alt="" id="lampu1">
+
+            <label for="default-toggle1" class="inline-flex relative items-center cursor-pointer">
+                <!-- sambungkan for dan id default-toggle1,2,dan 3 ke variabel javascript -->
+                <input type="checkbox" value="" id="default-toggle1" class="sr-only peer" onchange="saklar()">
+                <!-- onchange merupakan function untuk mentrigger swtichnya ke saklar -->
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 
+                    rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full 
+                    after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+                <!-- tag div ini adalah button swtich toggle -->
+
+                <!-- <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span> -->
+                <!-- tag span dihapus -->
+            </label>
+        </div>
+
+        <!-- Lampu 2 -->
+        <div class="flex flex-col gap-2 items-center">
+            <!-- gunakan items-center agar toggle berada ditengah -->
+            <img src="assets/images/off.jpg" alt="" id="lampu2">
+            <label for="default-toggle2" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="default-toggle2" class="sr-only peer" onchange="saklar()">
+                <!-- onchange merupakan function untuk mentrigger swtichnya ke saklar -->
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 
+                    rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full 
+                    after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+                <!-- tag div ini adalah button swtich toggle -->
+
+                <!-- <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span> -->
+                <!-- tag span dihapus -->
+            </label>
+        </div>
+
+        <!-- lampu 3 -->
+        <div class="flex flex-col gap-2 items-center">
+            <!-- gunakan items-center agar toggle berada ditengah -->
+            <img src="assets/images/off.jpg" alt="" id="lampu3">
+            <label for="default-toggle3" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" id="default-toggle3" class="sr-only peer" onchange="saklar()">
+                <!-- onchange merupakan function untuk mentrigger swtichnya ke saklar -->
+                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 
+                    rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] 
+                    after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full 
+                    after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+                <!-- tag div ini adalah button swtich toggle -->
+
+                <!-- <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"></span> -->
+                <!-- tag span dihapus -->
+            </label>
+        </div>
+    </div>
+    <!-- button onclick = memanggil fungsi saklar -->
+
+    <!-- ini adalah script js -->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <!-- Include via CDN dari flowbite.com -->
+    <script src="saklar.js" type="application/javascript"></script>
+</body>
+
+</html>
